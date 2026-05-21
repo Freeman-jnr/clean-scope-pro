@@ -118,8 +118,9 @@ function ServiceCard({ service, index }: { service: ServiceCardProps; index: num
               {t}
             </span>
           ))}
-        </div>
       </div>
+      </div>
+    </div>
     </div>
   );
 }
