@@ -1,3 +1,5 @@
+import heroImg from "@/assets/hero-clean.jpg";
+
 export default function Hero() {
   return (
     <section
@@ -106,48 +108,24 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* right card stack */}
+        {/* right image */}
         <div className="hidden nav:flex justify-center items-center animate-fade-in-right">
-          <div className="relative w-[340px] h-[360px]">
+          <div className="relative w-[420px] h-[460px]">
             <div
-              className="absolute bg-sky-lighter rounded-lg p-6 shadow-[0_4px_20px_rgba(2,132,199,0.12)] transition-transform hover:-translate-y-1"
-              style={{
-                width: 260,
-                top: 16,
-                left: 50,
-                zIndex: 2,
-                transform: "rotate(4deg)",
-                height: 280,
-              }}
+              className="absolute inset-0 bg-sky-light/40 rounded-2xl"
+              style={{ transform: "rotate(4deg)" }}
             />
-            <div
-              className="absolute bg-white rounded-lg p-6 shadow-[0_8px_40px_rgba(12,45,72,0.12)] transition-transform hover:-translate-y-1"
-              style={{ width: 280, top: 40, left: 30, zIndex: 3 }}
-            >
-              <div className="w-12 h-12 bg-sky-lighter rounded-md flex items-center justify-center text-[1.4rem] mb-4">
-                🏠
+            <img
+              src={heroImg}
+              alt="Professional cleaner mopping a Birmingham living room"
+              className="relative w-full h-full object-cover rounded-2xl shadow-[0_20px_60px_rgba(12,45,72,0.25)]"
+            />
+            <div className="absolute -bottom-5 -left-5 bg-white rounded-xl px-5 py-3 shadow-[0_8px_24px_rgba(2,132,199,0.18)] flex items-center gap-3">
+              <span className="w-9 h-9 bg-sky-lighter rounded-md flex items-center justify-center text-lg">✓</span>
+              <div>
+                <p className="font-outfit font-bold text-navy text-sm leading-tight">Checklist Verified</p>
+                <p className="text-[11px] text-gray-500">Every single clean</p>
               </div>
-              <h3 className="font-outfit font-bold text-navy mb-1">
-                Airbnb Turnover
-              </h3>
-              <p className="text-[0.82rem] text-gray-600 leading-[1.5]">
-                Same-day turnovers with photo verification after every clean.
-              </p>
-              {[
-                "Completed with checklist",
-                "Photo verification included",
-                "Linen & restocking available",
-              ].map((t) => (
-                <div
-                  key={t}
-                  className="flex items-center gap-1.5 mt-[0.9rem] text-[0.8rem] text-sky-dark font-medium"
-                >
-                  <span className="w-[18px] h-[18px] bg-sky-lighter rounded-full flex items-center justify-center text-[0.7rem]">
-                    ✓
-                  </span>
-                  {t}
-                </div>
-              ))}
             </div>
           </div>
         </div>

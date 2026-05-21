@@ -1,4 +1,5 @@
 import SectionBadge from "./SectionBadge";
+import aboutImg from "@/assets/cleaner-thumbsup.jpg";
 
 const features = [
   { icon: "📋", title: "Structured Checklists", text: "Every job completed to a detailed, consistent standard." },
@@ -48,33 +49,26 @@ export default function About() {
         </div>
 
         <div className="fade-up">
-          <div
-            className="relative rounded-xl p-10 text-center overflow-hidden"
-            style={{
-              background: "linear-gradient(135deg, #E0F2FE, #BAE6FD)",
-            }}
-          >
-            <div
-              className="absolute -top-10 -right-10 w-[200px] h-[200px] rounded-full"
-              style={{ background: "rgba(56,189,248,0.3)" }}
+          <div className="relative rounded-xl overflow-hidden">
+            <img
+              src={aboutImg}
+              alt="Smiling ClearSpace Pro cleaner with supplies, ready to serve Birmingham"
+              className="w-full h-[480px] object-cover"
             />
-            <div className="relative">
-              <div className="text-[5rem] leading-none mb-4">🧹</div>
-              <p className="font-outfit font-extrabold text-2xl text-navy mb-2">
+            <div className="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent" />
+            <div className="absolute bottom-6 left-6 right-6 text-white">
+              <p className="font-outfit font-extrabold text-2xl mb-1">
                 Clean. Reliable. Professional.
               </p>
-              <p className="text-sky-deeper font-medium text-sm">
-                Serving Birmingham & Surrounding Areas
-              </p>
+              <p className="text-white/80 text-sm">Serving Birmingham & Surrounding Areas</p>
             </div>
-
             <div
               className="absolute top-6 left-6 bg-white rounded-full px-4 py-2 text-xs font-semibold text-sky-deeper shadow-[0_4px_16px_rgba(2,132,199,0.15)] animate-float-pill"
             >
               ✓ Photo Verification
             </div>
             <div
-              className="absolute bottom-6 right-6 bg-white rounded-full px-4 py-2 text-xs font-semibold text-sky-deeper shadow-[0_4px_16px_rgba(2,132,199,0.15)] animate-float-pill"
+              className="absolute top-6 right-6 bg-white rounded-full px-4 py-2 text-xs font-semibold text-sky-deeper shadow-[0_4px_16px_rgba(2,132,199,0.15)] animate-float-pill"
               style={{ animationDelay: "-2s" }}
             >
               📍 Birmingham Based

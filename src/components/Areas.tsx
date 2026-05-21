@@ -1,4 +1,5 @@
 import SectionBadge from "./SectionBadge";
+import areasImg from "@/assets/supplies-bucket.jpg";
 
 const areas = [
   "Birmingham City Centre", "Edgbaston", "Moseley", "Harborne",
@@ -22,21 +23,22 @@ export default function Areas() {
           </p>
         </div>
 
-        <div
-          className="fade-up max-w-[700px] mx-auto rounded-xl flex flex-col items-center justify-center mb-8"
-          style={{
-            height: 260,
-            background: "linear-gradient(135deg, #E0F2FE, #BAE6FD)",
-            border: "2px dashed #BAE6FD",
-          }}
-        >
-          <div className="text-5xl mb-3">📍</div>
-          <p className="font-outfit font-extrabold text-2xl text-navy mb-2">
-            Birmingham & Surrounding Areas
-          </p>
-          <p className="text-sky-deeper font-medium text-sm px-4">
-            Contact us to confirm coverage for your specific location
-          </p>
+        <div className="fade-up relative max-w-[700px] mx-auto rounded-xl overflow-hidden mb-8" style={{ height: 300 }}>
+          <img
+            src={areasImg}
+            alt="ClearSpace Pro cleaner with supplies ready for Birmingham bookings"
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-br from-navy/75 via-navy/45 to-sky-deeper/55" />
+          <div className="relative h-full flex flex-col items-center justify-center text-center px-6">
+            <div className="text-5xl mb-3">📍</div>
+            <p className="font-outfit font-extrabold text-2xl text-white mb-2">
+              Birmingham & Surrounding Areas
+            </p>
+            <p className="text-white/85 font-medium text-sm">
+              Contact us to confirm coverage for your specific location
+            </p>
+          </div>
         </div>
 
         <div className="fade-up flex flex-wrap justify-center gap-2.5 max-w-[600px] mx-auto">
