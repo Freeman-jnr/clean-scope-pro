@@ -1,5 +1,6 @@
 import SectionBadge from "./SectionBadge";
 import type { QualityCardProps } from "@/types";
+import qualityImg from "@/assets/janitor-cart.jpg";
 
 const cards: QualityCardProps[] = [
   { icon: "📋", title: "Structured Checklists", text: "Every clean follows a detailed checklist so nothing is ever missed." },
@@ -28,6 +29,18 @@ export default function Quality() {
             systems in place to ensure consistency every single time.
           </p>
         </div>
+
+        <div className="fade-up mt-12 relative rounded-2xl overflow-hidden h-[220px]">
+          <img src={qualityImg} alt="ClearSpace Pro team member with cleaning trolley" className="absolute inset-0 w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-gradient-to-r from-navy/85 via-navy/55 to-transparent" />
+          <div className="relative h-full flex items-center px-8 max-w-md">
+            <div>
+              <p className="font-outfit font-extrabold text-white text-2xl leading-tight mb-2">Trained. Equipped. Consistent.</p>
+              <p className="text-white/75 text-sm">Every team member arrives fully equipped and follows our quality standard end to end.</p>
+            </div>
+          </div>
+        </div>
+
 
         <div
           className="grid gap-6 mt-12"

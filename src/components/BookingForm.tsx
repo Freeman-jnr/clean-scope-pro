@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import SectionBadge from "./SectionBadge";
 import type { BookingFeatureProps } from "@/types";
+import bookingImg from "@/assets/cleaner-thumbsup.jpg";
 
 interface FormData {
   fname: string; lname: string; email: string; phone: string;
@@ -53,11 +54,17 @@ export default function BookingForm() {
           <h2 className="font-outfit font-extrabold text-3xl md:text-4xl text-navy leading-[1.15] tracking-[-0.02em] mb-4">
             Book Your <span className="text-sky-dark">Clean Today</span>
           </h2>
-          <p className="text-gray-600 leading-[1.7] mb-8">
+          <p className="text-gray-600 leading-[1.7] mb-6">
             Fill in the form and our team will get back to you within a few
             hours to confirm your booking and discuss your specific
             requirements.
           </p>
+
+          <div className="relative rounded-xl overflow-hidden mb-6 h-44">
+            <img src={bookingImg} alt="Friendly ClearSpace Pro cleaner ready to help" className="absolute inset-0 w-full h-full object-cover" />
+            <div className="absolute inset-0 bg-gradient-to-tr from-sky-deeper/70 to-transparent" />
+          </div>
+
 
           <div className="flex flex-col gap-3">
             {features.map((f) => (

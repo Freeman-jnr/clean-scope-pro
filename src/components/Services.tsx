@@ -1,5 +1,11 @@
 import SectionBadge from "./SectionBadge";
 import type { ServiceCardProps } from "@/types";
+import airbnbImg from "@/assets/sofa-clean.jpg";
+import eotImg from "@/assets/carpet-clean.jpg";
+import voidImg from "@/assets/janitorial.jpg";
+import deepImg from "@/assets/mop-bucket.jpg";
+
+const serviceImages = [airbnbImg, eotImg, voidImg, deepImg];
 
 const services: ServiceCardProps[] = [
   {
@@ -68,18 +74,21 @@ const services: ServiceCardProps[] = [
 function ServiceCard({ service, index }: { service: ServiceCardProps; index: number }) {
   return (
     <div
-      className="fade-up group relative bg-white rounded-lg p-8 border border-gray-200 hover:border-sky-light hover:-translate-y-1 hover:shadow-[0_16px_48px_rgba(2,132,199,0.12)] transition-all overflow-hidden"
+      className="fade-up group relative bg-white rounded-lg border border-gray-200 hover:border-sky-light hover:-translate-y-1 hover:shadow-[0_16px_48px_rgba(2,132,199,0.12)] transition-all overflow-hidden"
       style={{ transitionDelay: `${index * 80}ms` }}
     >
-      <div
-        className="absolute top-0 left-0 right-0 h-1 opacity-0 group-hover:opacity-100 transition-opacity"
-        style={{
-          background: "linear-gradient(90deg, #38BDF8, #0284C7)",
-        }}
-      />
-      <div className="w-14 h-14 bg-sky-lighter group-hover:bg-sky-light rounded-md flex items-center justify-center text-2xl mb-5 transition-colors">
-        {service.icon}
+      <div className="relative h-44 overflow-hidden">
+        <img
+          src={serviceImages[index]}
+          alt={service.title}
+          className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-navy/40 to-transparent" />
+        <div className="absolute top-3 left-3 w-11 h-11 bg-white/95 backdrop-blur rounded-md flex items-center justify-center text-xl shadow-md">
+          {service.icon}
+        </div>
       </div>
+      <div className="p-8 pt-6">
       <h3 className="font-outfit font-bold text-navy text-lg mb-2">
         {service.title}
       </h3>
@@ -109,8 +118,9 @@ function ServiceCard({ service, index }: { service: ServiceCardProps; index: num
               {t}
             </span>
           ))}
-        </div>
       </div>
+      </div>
+    </div>
     </div>
   );
 }
