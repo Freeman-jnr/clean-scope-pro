@@ -42,10 +42,7 @@ export default function Quality() {
         </div>
 
 
-        <div
-          className="grid gap-6 mt-12"
-          style={{ gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))" }}
-        >
+        <div className="grid gap-6 mt-12 grid-cols-2 lg:grid-cols-3">
           {cards.map((c, i) => (
             <div
               key={c.title}
