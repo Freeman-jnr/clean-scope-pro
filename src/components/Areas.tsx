@@ -2,9 +2,9 @@ import SectionBadge from "./SectionBadge";
 import areasImg from "@/assets/supplies-bucket.jpg";
 
 const areas = [
-  "Birmingham City Centre", "Edgbaston", "Moseley", "Harborne",
-  "Erdington", "Solihull", "Sutton Coldfield", "Handsworth",
-  "Ladywood", "Selly Oak", "Aston", "& More",
+"Coventry City Centre", "Earlsdon", "Tile Hill", "Foleshill",
+"Canley", "Binley", "Stoke", "Wyken",
+"Radford", "Allesley", "Cheylesmore", "& More",
 ];
 
 export default function Areas() {
@@ -17,7 +17,7 @@ export default function Areas() {
             Areas We <span className="text-sky-dark">Cover</span>
           </h2>
           <p className="text-gray-600 leading-[1.7] max-w-[600px] mx-auto mb-10">
-            We provide professional property cleaning services across Birmingham
+            We provide professional property cleaning services across Coventry
             and surrounding areas. Get in touch to confirm coverage for your
             location.
           </p>
@@ -33,7 +33,7 @@ export default function Areas() {
           <div className="relative h-full flex flex-col items-center justify-center text-center px-6">
             <div className="text-5xl mb-3">📍</div>
             <p className="font-outfit font-extrabold text-2xl text-white mb-2">
-              Birmingham & Surrounding Areas
+              Coventry & Surrounding Areas
             </p>
             <p className="text-white/85 font-medium text-sm">
               Contact us to confirm coverage for your specific location
