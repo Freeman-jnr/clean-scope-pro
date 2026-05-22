@@ -41,14 +41,14 @@ export default function Hero() {
       <div className="relative z-10 max-w-6xl mx-auto w-full px-8 py-24 text-center">
         <div className="inline-flex items-center gap-2 bg-white/15 backdrop-blur-md border border-white/30 rounded-full px-4 py-1.5 text-xs font-semibold text-white uppercase tracking-wider mb-6">
           <span className="w-[7px] h-[7px] bg-sky rounded-full animate-pulse-dot" />
-          Birmingham's Trusted Cleaners
+          Coventry's Trusted Cleaners
         </div>
 
         <h1
           className="font-outfit font-extrabold text-white leading-[1.1] tracking-[-0.03em] mb-6 mx-auto max-w-4xl drop-shadow-lg"
           style={{ fontSize: "clamp(2.6rem, 6vw, 4.6rem)" }}
         >
-          Birmingham's Premier Property{" "}
+          Coventry's Premier Property{" "}
           <em className="not-italic text-sky-light">Cleaning Company</em>
         </h1>
 
