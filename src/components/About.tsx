@@ -15,11 +15,11 @@ export default function About() {
         <div className="fade-up">
           <SectionBadge>About Us</SectionBadge>
           <h2 className="font-outfit font-extrabold text-3xl md:text-4xl text-navy leading-[1.15] tracking-[-0.02em] mb-6">
-            Birmingham's Property{" "}
+           Coventry's Property{" "}
             <span className="text-sky-dark">Cleaning Specialists</span>
           </h2>
           <p className="text-gray-600 leading-[1.7] mb-4">
-            We are a Birmingham-based property cleaning and support company
+            We are a Coventry-based property cleaning and support company
             specialising in Airbnb turnovers, end-of-tenancy cleaning, domestic
             cleaning and void property services.
           </p>
@@ -52,7 +52,7 @@ export default function About() {
           <div className="relative rounded-xl overflow-hidden">
             <img
               src={aboutImg}
-              alt="Smiling ClearSpace Pro cleaner with supplies, ready to serve Birmingham"
+              alt="Smiling ClearSpace Pro cleaner with supplies, ready to serve Coventry"
               className="w-full h-[480px] object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent" />
@@ -60,7 +60,7 @@ export default function About() {
               <p className="font-outfit font-extrabold text-2xl mb-1">
                 Clean. Reliable. Professional.
               </p>
-              <p className="text-white/80 text-sm">Serving Birmingham & Surrounding Areas</p>
+              <p className="text-white/80 text-sm">Serving Coventry & Surrounding Areas</p>
             </div>
             <div
               className="absolute top-6 left-6 bg-white rounded-full px-4 py-2 text-xs font-semibold text-sky-deeper shadow-[0_4px_16px_rgba(2,132,199,0.15)] animate-float-pill"
@@ -71,7 +71,7 @@ export default function About() {
               className="absolute top-6 right-6 bg-white rounded-full px-4 py-2 text-xs font-semibold text-sky-deeper shadow-[0_4px_16px_rgba(2,132,199,0.15)] animate-float-pill"
               style={{ animationDelay: "-2s" }}
             >
-              📍 Birmingham Based
+              Coventry Based
             </div>
           </div>
         </div>
