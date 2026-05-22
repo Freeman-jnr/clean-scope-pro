@@ -93,7 +93,6 @@ export default function BookingForm() {
           >
             {submitted ? (
               <div className="text-center py-8">
-                <div className="text-[3.5rem] mb-4">✅</div>
                 <h3 className="font-outfit font-extrabold text-2xl text-navy mb-3">
                   Booking Request Sent!
                 </h3>
@@ -112,7 +111,7 @@ export default function BookingForm() {
             ) : (
               <form onSubmit={onSubmit} noValidate>
                 <h3 className="font-outfit font-bold text-xl text-navy border-b border-gray-100 pb-5 mb-7">
-                  🗓️ Request a Booking
+                  Request a Booking
                 </h3>
 
                 {errors.length > 0 && (
@@ -199,7 +198,7 @@ export default function BookingForm() {
                   Send Booking Request
                 </button>
                 <p className="text-xs text-gray-400 text-center mt-4">
-                  🔒 Your details are secure and will only be used to process
+                  Your details are secure and will only be used to process
                   your booking.
                 </p>
               </form>
