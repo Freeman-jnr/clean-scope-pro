@@ -8,13 +8,13 @@ export default function Footer() {
               ClearSpace<span className="text-sky">Pro</span>
             </p>
             <p className="text-sm text-white/50 leading-relaxed max-w-[280px] mb-5">
-              Birmingham-based property cleaning specialists. Reliable,
+              Coventry-based property cleaning specialists. Reliable,
               structured, and built for landlords, letting agents, Airbnb
               hosts, and housing providers.
             </p>
             <ul className="space-y-2 list-none">
               <li className="flex items-center gap-2 text-xs text-white/55">
-                📍 <span><strong className="text-white/75">Location:</strong> Birmingham, UK</span>
+                📍 <span><strong className="text-white/75">Location:</strong> Coventry, UK</span>
               </li>
               <li className="flex items-center gap-2 text-xs text-white/55">
                 📞 <span><strong className="text-white/75">Phone:</strong> Available on booking</span>
@@ -60,10 +60,10 @@ export default function Footer() {
 
         <div className="flex flex-wrap items-center justify-between gap-4 pt-6">
           <p className="text-xs text-white/35">
-            © 2025 ClearSpace Pro. All rights reserved. Birmingham, UK.
+            © 2025 ClearSpace Pro. All rights reserved. Coventry, UK.
           </p>
           <div className="flex flex-wrap gap-2">
-            {["✓ Insured", "✓ Checklist-Based", "✓ Birmingham Based"].map((b) => (
+            {["✓ Insured", "✓ Checklist-Based", "✓ Coventry Based"].map((b) => (
               <span
                 key={b}
                 className="bg-white/[0.08] border border-white/10 text-white/50 text-xs px-3 py-1 rounded-full"
