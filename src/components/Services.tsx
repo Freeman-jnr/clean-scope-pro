@@ -137,7 +137,7 @@ export default function Services() {
           <p className="text-gray-600 leading-[1.7]">
             Reliable and professional property cleaning for Airbnb hosts,
             landlords, letting agents, property managers, and housing providers
-            across Birmingham.
+            across Coventry.
           </p>
         </div>
 
