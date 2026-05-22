@@ -141,7 +141,7 @@ export default function Services() {
           </p>
         </div>
 
-        <div className="grid gap-6" style={{ gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))" }}>
+        <div className="grid gap-6 grid-cols-2 lg:grid-cols-4">
           {services.map((s, i) => (
             <ServiceCard key={s.title} service={s} index={i} />
           ))}
