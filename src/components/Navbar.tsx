@@ -26,7 +26,7 @@ export default function Navbar() {
         href="#hero"
         className="font-outfit font-extrabold text-[1.45rem] text-navy tracking-[-0.03em]"
       >
-        ClearSpace<span className="text-sky-dark">Pro</span>
+        Spark<span className="text-sky-dark">Pro</span> Cleaning Ltd
       </a>
 
       <ul className="hidden nav:flex gap-8 items-center list-none">
