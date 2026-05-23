@@ -5,7 +5,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 nav:grid-cols-[2fr_1fr_1fr] gap-12 pb-10 border-b border-white/10">
           <div>
             <p className="font-outfit font-extrabold text-xl mb-4">
-              ClearSpace<span className="text-sky">Pro</span>
+              Spark<span className="text-sky">Pro</span> Cleaning Ltd
             </p>
             <p className="text-sm text-white/50 leading-relaxed max-w-[280px] mb-5">
               Coventry-based property cleaning specialists. Reliable,
