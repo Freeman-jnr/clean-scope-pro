@@ -10,14 +10,13 @@ const features = [
 
 export default function About() {
   return (
-    <section id="about" className="relative bg-glow-soft py-24 px-6 sm:px-8 overflow-hidden">
-      <div className="absolute -top-32 -right-20 w-[420px] h-[420px] rounded-full bg-sky/15 blur-[120px] pointer-events-none" />
-      <div className="relative max-w-6xl mx-auto grid grid-cols-1 nav:grid-cols-2 gap-16 items-center">
+    <section id="about" className="bg-white py-20 px-8">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 nav:grid-cols-2 gap-16 items-center">
         <div className="fade-up">
           <SectionBadge>About Us</SectionBadge>
-          <h2 className="font-outfit font-extrabold text-3xl md:text-5xl text-navy leading-[1.1] tracking-[-0.025em] mb-6">
-            Coventry's Property{" "}
-            <span className="text-gradient-sky">Cleaning Specialists</span>
+          <h2 className="font-outfit font-extrabold text-3xl md:text-4xl text-navy leading-[1.15] tracking-[-0.02em] mb-6">
+           Coventry's Property{" "}
+            <span className="text-sky-dark">Cleaning Specialists</span>
           </h2>
           <p className="text-gray-600 leading-[1.7] mb-4">
             We are a Coventry-based property cleaning and support company
@@ -35,43 +34,45 @@ export default function About() {
             {features.map((f) => (
               <div
                 key={f.title}
-                className="glow-ring relative bg-white/70 backdrop-blur-md border border-sky-light/60 rounded-xl p-5 card-hover hover:border-sky"
+                className="bg-sky-lighter border border-sky-light rounded-md p-5"
               >
                 <div className="text-2xl mb-2">{f.icon}</div>
                 <h3 className="font-outfit font-bold text-navy text-sm mb-1">
                   {f.title}
                 </h3>
-                <p className="text-xs text-gray-600 leading-relaxed">{f.text}</p>
+                <p className="text-xs text-gray-600 leading-relaxed">
+                  {f.text}
+                </p>
               </div>
             ))}
           </div>
         </div>
 
         <div className="fade-up">
-          <div className="relative rounded-2xl overflow-hidden group shadow-[0_30px_80px_-20px_rgba(2,132,199,0.35)]">
+          <div className="relative rounded-xl overflow-hidden">
             <img
               src={aboutImg}
               alt="Smiling Spark Pro Cleaning Limited cleaner with supplies, ready to serve Coventry"
-              className="w-full h-[480px] object-cover transition-transform duration-700 group-hover:scale-105"
+              className="w-full h-[480px] object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-navy-deep/80 via-navy/20 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent" />
             <div className="absolute bottom-6 left-6 right-6 text-white">
               <p className="font-outfit font-extrabold text-2xl mb-1">
                 Clean. Reliable. Professional.
               </p>
               <p className="text-white/80 text-sm">Serving Coventry & Surrounding Areas</p>
             </div>
-            <div className="absolute top-6 left-6 glass-light rounded-full px-4 py-2 text-xs font-semibold text-sky-deeper shadow-[0_8px_24px_rgba(2,132,199,0.2)] animate-float-pill">
+            <div
+              className="absolute top-6 left-6 bg-white rounded-full px-4 py-2 text-xs font-semibold text-sky-deeper shadow-[0_4px_16px_rgba(2,132,199,0.15)] animate-float-pill"
+            >
               ✓ Photo Verification
             </div>
             <div
-              className="absolute top-6 right-6 glass-light rounded-full px-4 py-2 text-xs font-semibold text-sky-deeper shadow-[0_8px_24px_rgba(2,132,199,0.2)] animate-float-pill"
+              className="absolute top-6 right-6 bg-white rounded-full px-4 py-2 text-xs font-semibold text-sky-deeper shadow-[0_4px_16px_rgba(2,132,199,0.15)] animate-float-pill"
               style={{ animationDelay: "-2s" }}
             >
               Coventry Based
             </div>
-            {/* glow accent */}
-            <div className="absolute -bottom-10 -right-10 w-40 h-40 rounded-full bg-sky/40 blur-3xl pointer-events-none" />
           </div>
         </div>
       </div>

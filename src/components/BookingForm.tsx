@@ -16,7 +16,7 @@ const features: BookingFeatureProps[] = [
 ];
 
 const fieldCls =
-  "bg-white/60 backdrop-blur-sm border-[1.5px] border-gray-200 rounded-lg px-4 py-3 text-sm text-gray-800 w-full outline-none transition-all focus:border-sky focus:bg-white focus:ring-4 focus:ring-sky/15 hover:border-sky-light";
+  "bg-gray-50 border-[1.5px] border-gray-200 rounded-sm px-4 py-2.5 text-sm text-gray-800 w-full outline-none transition-all focus:border-sky focus:bg-white focus:ring-4 focus:ring-sky/10";
 const labelCls =
   "block text-xs font-semibold uppercase tracking-wider text-gray-600 mb-1.5";
 
@@ -47,15 +47,12 @@ export default function BookingForm() {
   };
 
   return (
-    <section id="booking" className="relative bg-gradient-to-b from-gray-50 to-white py-24 px-6 sm:px-8 overflow-hidden">
-      <div className="absolute -top-32 right-0 w-[480px] h-[480px] rounded-full bg-sky/15 blur-[140px] pointer-events-none" />
-      <div className="absolute bottom-0 left-0 w-[420px] h-[420px] rounded-full bg-sky-deeper/10 blur-[140px] pointer-events-none" />
-
-      <div className="relative max-w-6xl mx-auto grid grid-cols-1 nav:grid-cols-[1fr_1.3fr] gap-14 items-start">
+    <section id="booking" className="bg-gray-50 py-20 px-8">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 nav:grid-cols-[1fr_1.3fr] gap-16 items-start">
         <div className="fade-up">
           <SectionBadge>Get in Touch</SectionBadge>
-          <h2 className="font-outfit font-extrabold text-3xl md:text-5xl text-navy leading-[1.1] tracking-[-0.025em] mb-4">
-            Book Your <span className="text-gradient-sky">Clean Today</span>
+          <h2 className="font-outfit font-extrabold text-3xl md:text-4xl text-navy leading-[1.15] tracking-[-0.02em] mb-4">
+            Book Your <span className="text-sky-dark">Clean Today</span>
           </h2>
           <p className="text-gray-600 leading-[1.7] mb-6">
             Fill in the form and our team will get back to you within a few
@@ -63,25 +60,25 @@ export default function BookingForm() {
             requirements.
           </p>
 
-          <div className="relative rounded-2xl overflow-hidden mb-6 h-48 shadow-[0_20px_60px_-20px_rgba(2,132,199,0.4)]">
+          <div className="relative rounded-xl overflow-hidden mb-6 h-44">
             <img src={bookingImg} alt="Friendly Spark Pro Cleaning Limited cleaner ready to help" className="absolute inset-0 w-full h-full object-cover" />
-            <div className="absolute inset-0 bg-gradient-to-tr from-sky-deeper/80 via-navy/30 to-transparent" />
-            <div className="absolute bottom-4 left-5 right-5 text-white">
-              <p className="font-outfit font-bold text-lg">Real people. Real reply within hours.</p>
-            </div>
+            <div className="absolute inset-0 bg-gradient-to-tr from-sky-deeper/70 to-transparent" />
           </div>
+
 
           <div className="flex flex-col gap-3">
             {features.map((f) => (
               <div
                 key={f.title}
-                className="glow-ring flex items-center gap-4 bg-white/80 backdrop-blur-md border border-gray-200 rounded-xl px-5 py-4 card-hover hover:border-sky-light"
+                className="flex items-center gap-4 bg-white border border-gray-200 rounded-md px-5 py-4"
               >
-                <div className="w-11 h-11 bg-gradient-to-br from-sky-lighter to-sky-light rounded-lg flex items-center justify-center text-xl flex-shrink-0">
+                <div className="w-10 h-10 bg-sky-lighter rounded-sm flex items-center justify-center text-xl flex-shrink-0">
                   {f.icon}
                 </div>
                 <div>
-                  <p className="font-outfit font-bold text-navy text-sm">{f.title}</p>
+                  <p className="font-outfit font-bold text-navy text-sm">
+                    {f.title}
+                  </p>
                   <p className="text-xs text-gray-600">{f.text}</p>
                 </div>
               </div>
@@ -90,13 +87,12 @@ export default function BookingForm() {
         </div>
 
         <div className="fade-up">
-          <div className="relative bg-white/80 backdrop-blur-xl rounded-2xl p-8 sm:p-10 border border-white/80 shadow-[0_30px_80px_-20px_rgba(12,45,72,0.18)]">
-            <div className="absolute -inset-[1px] rounded-2xl bg-gradient-to-br from-sky/30 via-transparent to-sky-deeper/20 -z-10 blur" />
+          <div
+            className="bg-white rounded-xl p-10 border border-gray-200"
+            style={{ boxShadow: "0 8px 48px rgba(12,45,72,0.08)" }}
+          >
             {submitted ? (
               <div className="text-center py-8">
-                <div className="inline-flex w-16 h-16 rounded-2xl bg-gradient-to-br from-sky to-sky-deeper text-white items-center justify-center text-3xl mb-5 shadow-[0_12px_32px_rgba(2,132,199,0.4)]">
-                  ✓
-                </div>
                 <h3 className="font-outfit font-extrabold text-2xl text-navy mb-3">
                   Booking Request Sent!
                 </h3>
@@ -119,7 +115,7 @@ export default function BookingForm() {
                 </h3>
 
                 {errors.length > 0 && (
-                  <div className="mb-5 p-4 bg-red-50 border border-red-200 rounded-lg text-sm text-red-700">
+                  <div className="mb-5 p-4 bg-red-50 border border-red-200 rounded-sm text-sm text-red-700">
                     <ul className="list-disc list-inside space-y-1">
                       {errors.map((e) => <li key={e}>{e}</li>)}
                     </ul>
@@ -180,7 +176,7 @@ export default function BookingForm() {
 
                   <div className="sm:col-span-2">
                     <label className={labelCls}>Property Address / Area</label>
-                    <input className={fieldCls} type="text" value={formData.address} onChange={update("address")} placeholder="e.g. Earlsdon, Coventry" />
+                    <input className={fieldCls} type="text" value={formData.address} onChange={update("address")} placeholder="e.g. Edgbaston, Birmingham" />
                   </div>
 
                   <div className="sm:col-span-2">
@@ -197,12 +193,13 @@ export default function BookingForm() {
 
                 <button
                   type="submit"
-                  className="btn-shine w-full bg-gradient-to-r from-sky to-sky-deeper text-white font-outfit font-bold text-base rounded-full py-4 mt-7 shadow-[0_12px_40px_rgba(56,189,248,0.4)] hover:shadow-[0_18px_60px_rgba(56,189,248,0.6)] hover:-translate-y-0.5 transition-all"
+                  className="w-full bg-sky-dark text-white font-outfit font-bold text-base rounded-full py-4 mt-7 shadow-[0_4px_18px_rgba(2,132,199,0.3)] hover:bg-sky-deeper hover:-translate-y-0.5 hover:shadow-[0_8px_28px_rgba(2,132,199,0.4)] transition-all"
                 >
                   Send Booking Request
                 </button>
                 <p className="text-xs text-gray-400 text-center mt-4">
-                  Your details are secure and will only be used to process your booking.
+                  Your details are secure and will only be used to process
+                  your booking.
                 </p>
               </form>
             )}
