@@ -20,7 +20,7 @@ export default function Footer() {
                 📞 <span><strong className="text-white/75">Phone:</strong> Available on booking</span>
               </li>
               <li className="flex items-center gap-2 text-xs text-white/55">
-                ✉️ <span><strong className="text-white/75">Email:</strong> Available on booking</span>
+                ✉️ <span><strong className="text-white/75">Email:</strong> <a href="mailto:info@sparkprocleaninglimited.co.uk" className="hover:text-sky transition-colors">info@sparkprocleaninglimited.co.uk</a></span>
               </li>
             </ul>
           </div>
