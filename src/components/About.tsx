@@ -52,7 +52,7 @@ export default function About() {
           <div className="relative rounded-xl overflow-hidden">
             <img
               src={aboutImg}
-              alt="Smiling ClearSpace Pro cleaner with supplies, ready to serve Coventry"
+              alt="Smiling Spark Pro Cleaning Limited cleaner with supplies, ready to serve Coventry"
               className="w-full h-[480px] object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent" />

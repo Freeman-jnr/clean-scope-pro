@@ -26,7 +26,7 @@ export default function Areas() {
         <div className="fade-up relative max-w-[700px] mx-auto rounded-xl overflow-hidden mb-8" style={{ height: 300 }}>
           <img
             src={areasImg}
-            alt="ClearSpace Pro cleaner with supplies ready for Birmingham bookings"
+            alt="Spark Pro Cleaning Limited cleaner with supplies ready for Birmingham bookings"
             className="absolute inset-0 w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-br from-navy/75 via-navy/45 to-sky-deeper/55" />

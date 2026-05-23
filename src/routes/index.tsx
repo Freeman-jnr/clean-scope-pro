@@ -14,13 +14,13 @@ export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({
     meta: [
-      { title: "ClearSpace Pro | Birmingham Property Cleaning Services" },
+      { title: "Spark Pro Cleaning Limited | Birmingham Property Cleaning Services" },
       {
         name: "description",
         content:
           "Birmingham-based specialists in Airbnb turnovers, end-of-tenancy, void, and deep cleaning for landlords, letting agents, and short-let hosts.",
       },
-      { property: "og:title", content: "ClearSpace Pro | Birmingham Property Cleaning" },
+      { property: "og:title", content: "Spark Pro Cleaning Limited | Birmingham Property Cleaning" },
       {
         property: "og:description",
         content:

@@ -5,7 +5,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 nav:grid-cols-[2fr_1fr_1fr] gap-12 pb-10 border-b border-white/10">
           <div>
             <p className="font-outfit font-extrabold text-xl mb-4">
-              ClearSpace<span className="text-sky">Pro</span>
+              Spark<span className="text-sky">Pro</span> Cleaning Ltd
             </p>
             <p className="text-sm text-white/50 leading-relaxed max-w-[280px] mb-5">
               Coventry-based property cleaning specialists. Reliable,
@@ -20,7 +20,7 @@ export default function Footer() {
                 📞 <span><strong className="text-white/75">Phone:</strong> Available on booking</span>
               </li>
               <li className="flex items-center gap-2 text-xs text-white/55">
-                ✉️ <span><strong className="text-white/75">Email:</strong> Available on booking</span>
+                ✉️ <span><strong className="text-white/75">Email:</strong> <a href="mailto:info@sparkprocleaninglimited.co.uk" className="hover:text-sky transition-colors">info@sparkprocleaninglimited.co.uk</a></span>
               </li>
             </ul>
           </div>
@@ -60,7 +60,7 @@ export default function Footer() {
 
         <div className="flex flex-wrap items-center justify-between gap-4 pt-6">
           <p className="text-xs text-white/35">
-            © 2025 ClearSpace Pro. All rights reserved. Coventry, UK.
+            © 2025 Spark Pro Cleaning Limited. All rights reserved. Coventry, UK.
           </p>
           <div className="flex flex-wrap gap-2">
             {["✓ Insured", "✓ Checklist-Based", "✓ Coventry Based"].map((b) => (
