@@ -60,7 +60,7 @@ export default function Footer() {
 
         <div className="flex flex-wrap items-center justify-between gap-4 pt-6">
           <p className="text-xs text-white/35">
-            © 2025 ClearSpace Pro. All rights reserved. Coventry, UK.
+            © 2025 Spark Pro Cleaning Limited. All rights reserved. Coventry, UK.
           </p>
           <div className="flex flex-wrap gap-2">
             {["✓ Insured", "✓ Checklist-Based", "✓ Coventry Based"].map((b) => (

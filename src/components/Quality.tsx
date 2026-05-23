@@ -31,7 +31,7 @@ export default function Quality() {
         </div>
 
         <div className="fade-up mt-12 relative rounded-2xl overflow-hidden h-[220px]">
-          <img src={qualityImg} alt="ClearSpace Pro team member with cleaning trolley" className="absolute inset-0 w-full h-full object-cover" />
+          <img src={qualityImg} alt="Spark Pro Cleaning Limited team member with cleaning trolley" className="absolute inset-0 w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-r from-navy/85 via-navy/55 to-transparent" />
           <div className="relative h-full flex items-center px-8 max-w-md">
             <div>

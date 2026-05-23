@@ -61,7 +61,7 @@ export default function BookingForm() {
           </p>
 
           <div className="relative rounded-xl overflow-hidden mb-6 h-44">
-            <img src={bookingImg} alt="Friendly ClearSpace Pro cleaner ready to help" className="absolute inset-0 w-full h-full object-cover" />
+            <img src={bookingImg} alt="Friendly Spark Pro Cleaning Limited cleaner ready to help" className="absolute inset-0 w-full h-full object-cover" />
             <div className="absolute inset-0 bg-gradient-to-tr from-sky-deeper/70 to-transparent" />
           </div>
 
